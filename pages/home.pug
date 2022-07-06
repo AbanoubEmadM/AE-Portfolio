@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+html 
+    head 
+        title Abanoub Emad Portfolio
+        include include/head.pug
+body 
+    .nav-div
+        .logo 
+            img(src="imgs/Caleb.png", alt="")
+        .nav-items 
+            ul 
+                li: a(href="#about-me") about me 
+                li: a(href="#services") services 
+                li: a(href="#portfolio") portfolio 
+                li: a(href="#testimonials") testimonials 
+                li: a(href="#contact-us") contact me 
+
+        .hire 
+            button: a(href="#contact-me") Hire me 
+    .home.container 
+        .home-content 
+            span.hello  Hello, I am
+            h2.name Abanoub Emad
+            p.job Front End Web Developer
+            p.desc I’m a top online marketer and branding expert, I started my career by lauching the popular metaverse design, in just a few short 
+                | years, I built the brand to millions of social media followers and websites visitors.
+            include include/hire
+        .home-img
+            img(src="imgs/Frame 23.png", alt="")
+    div(class="about container" id="about-me")
+        .about-img 
+            img(src="imgs/man.png", alt="")
+        .about-content        
+            p.bit a bit 
+            h2 about me 
+            p.desc I’m a top online marketer and branding expert, I started my career
+                | by lauching the popular metaverse design, in just a few short
+                |    years, I built the brand to millions of social media followers and websites visitors. I also created award-winning online products with millions of dolloars in online sales you want, you never get personalized experiences and they can be upwards of $1000 on hour. 
+            .qualifications 
+                .quali-box 
+                    each val in [{num:'1 Years+',name:'Experiance',img:'imgs/Group.png'},{num:'30+',name:'Projects',img:'imgs/Group 1.png'},{num:'24/7',name:'Customer Support',img:'imgs/Group (1).png'}]
+                        img(src=val.img, alt=vali)
+                        .qua-content 
+                            span.number=val.num 
+                            br
+                            span.desc=val.name
+            include include/hire
+    .case-studies.container#portfolio
+        .cases
+            each val,index in [{img:'imgs/products.png',title:'Products website',desc:'Complete products website that user can make account and add or remove products from cart. Shop page THat have all Products and contains filter input to filter products.contact page that have inputs to contact with website',link:'https://mostaql.com/portfolio/972138-%D9%85%D9%88%D9%82%D8%B9-%D8%A8%D9%8A%D8%B9-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA',flex:"row"},{img:'imgs/modernwebui.png',title:'Modern Web Ui',desc:'Modern Web Ui that shows What is GBT-3 Technology , Open Ai , Case Studies of GBT-3 and Library',link:'https://abanoubemadm.github.io/Modern-Web-Ui/',flex:"row-reverse"},{img:'imgs/improz.png',title:'Improz Landing Page',desc:'Improz Landing Page , teams sections show our team , contact with us section that allows you to contact with us , testimonials shows clients opinions about us, and finally about section shows what we can do',link:'http://imroz.rainbowit.net/home-particles',flex:"row"}]
+                div(class="case-box",style=`flex-direction:${val.flex}`)
+                    .case-img
+                        img(src=val.img alt="")
+                    .case-content 
+                        p.index='0' + index 
+                        h4.title= val.title
+                        p.desc= val.desc
+                        button: a(href=val.link) Details
+    div(class="services container" id="services")
+        .main-heading 
+            h4 services 
+            h1 check my services
+        each val in [{img:'imgs/project-1.png',title:'Resturant Page',text:'Simple Resturant Page for Customers to book seats or see menu'},{img:'imgs/project-2.png',title:'Landing Page',text:'Simple Landing Page For startup Company That Descripes Company Work '},{img:'imgs/project-3.png',title:'Inner Home Desings',text:'Website For Company That works in Home Designs and Decors in Suadi Arabia'}]
+            .srv-box.col-lg-4
+                img(src=val.img, alt="")
+                h4=val.title
+                p=val.text
+    div(class="all-tes" id="testimonials")
+    .our-clients    
+        .container 
+            p our clients
+            h1 Who Makes Me Proud
+            .clients
+                each img in ['imgs/slack.png','imgs/dropbox.png','imgs/google.png','imgs/tesla.png' ]
+                    .col-lg-3
+                            img(src=img, alt="")
+    div(class="contact-us" id="contact-us")  
+        .container 
+            .row 
+                .col-lg-6 
+                    h2 Contact us 
+                    p We are committed to processing the information in order to contact you and talk about your project.
+                    ul.list-unstyled
+                        li #[i(class="fa-solid fa-envelope")]  emadbebo729@gmail.com
+                             
+                        li #[i(class="fa-regular fa-mobile-screen")] +021274526679 
+                .col-lg-6 
+                    form(action="https://formsubmit.co/emadbebo729@gmail.com" method="POST")
+                        input(type="text" name="name" required placeholder="Name *")
+                        input(type="email" name="email" required placeholder="Email *")
+                        input(type="message" name="Message" placeholder='Message' required) 
+                        br
+                        button(type="submit") Submit
+    script(src="../js/jquery-3.6.0.min.js") 
+    script(src="../js/main.js") 

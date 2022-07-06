@@ -1,0 +1,60 @@
+.nav-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 26px 42px;
+    flex-direction: row;
+    .nav-items{
+        ul{
+            li{
+                font-weight: 500;
+                list-style: none;
+                padding-left: 15px;
+                display: inline-block;
+                a{
+                    font-weight: 600;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $titleColor;
+                    transition: 0.3s;
+                    border-bottom: 2px solid #fff;
+                    padding-bottom: 10px;
+                    font-size: 16px;
+                }
+                &:hover{
+                    a{
+                        transition: 0.3s;
+                        color: $mainColor;
+                        border-bottom: 2px solid $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+.hire{
+    button{
+        cursor: pointer;
+        background: #FCC028;
+        border: 2px solid #FCC028;
+        padding: 9px 26px;
+        transition: 0.3s;
+        border-radius: 5px;
+        color:#fff;
+        a{
+            text-decoration: none;
+            color:#fff;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+        &:hover{
+            transition: 0.3s;
+            background-color: #fff;
+            border-bottom: 2px solid $mainColor;
+            a{
+                color: #000;
+                transition: 0.3s;
+            }
+        }
+    }
+}

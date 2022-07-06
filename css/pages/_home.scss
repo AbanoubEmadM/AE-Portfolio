@@ -1,0 +1,274 @@
+.home{
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .home-content{
+        .hello{
+            font-size: 18px;
+            color: $mainColor;
+        }
+        .name{
+            font-size: 55px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .job{
+            font-size: 22px;
+            color: rgba(32, 119, 51, 1);
+        }
+        .desc{
+            font-size: 16px;
+            line-height: 33px;
+            color: $textColor;
+        }
+    }
+    .hire{
+        button.cv{
+            background-color: transparent;
+            border: none;
+            a{
+                color: #000;
+                font-weight: 600;
+                i{
+                    margin-left: 15px;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+.about{
+    margin-bottom: 100px;
+    @extend .home;
+    .about-content{
+        width: 50%;
+        p.bit{
+            font-size: 18px;
+            color: $mainColor;
+            text-transform: uppercase;
+        }
+        h2{
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        p.desc{
+            line-height: 32px;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 16px;
+            margin: 25px 0;
+        }
+    }
+    .about-img{
+        width: 50%;
+    }
+    .qualifications{
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;   
+        .quali-box {
+            display: flex;
+            align-items: center;   
+            img{
+                margin-right: 15px;
+            } 
+            .number{
+                font-size: 16px;
+                color: $mainColor;
+            }
+            .desc{
+                font-size: 17px;
+            }
+            .qua-content{
+                margin-right: 14px;
+            }
+        }
+    }
+}
+.services {
+    margin-bottom: 100px;
+    .main-heading{
+        margin-bottom: 35px;
+        text-align: center;
+        h4{
+            text-transform: uppercase;
+            color: $mainColor;
+        }
+        h1{
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+    .srv-box{
+        text-align: center;
+        img{
+            width: 100%;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        p{
+            color: #777;
+        }
+    }
+}
+.case-studies{
+    .case-box{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        .case-img{
+            width: 48%;
+            img{
+                width: 100%;
+            }    
+        }
+        .case-content{
+            width: 48%;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .index{
+                font-size: 20px;
+                color: #FCC028;
+            }
+            .title{
+                font-size: 32px;
+                font-weight: 600;
+            }
+            .desc{
+                font-size: 17px;
+                line-height: 30px;
+                color: #777;
+            }
+            button{
+                padding: 9px 26px;
+                border: 1px solid $mainColor;
+                border-radius: 5px;
+                width: 20%;
+                background-color: #fff;
+                transition: 0.3s;
+                a{
+                    color: $mainColor;
+                    text-decoration: none;
+                    transition: 0.3s;
+                }
+                &:hover{
+                    background-color: $mainColor;
+                    transition: 0.3s;
+                    a{
+                        color: #fff;
+                        transition: 0.3s;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.testimonials{
+    text-align: center;
+    .testi-box{
+        position: relative;
+        margin-top: 100px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;        img{
+            width: 65px;
+            border-radius: 50%;
+            position: absolute;
+            top: -66px;
+            transform: translate(-50%,50%);
+        }
+        .testimonials-content{
+            padding: 50px;
+            #desc{
+                font-size: 15px;
+                color: #777;
+            }
+            #name{
+                font-weight: 700;
+                font-size: 25px;
+            }
+            #job{
+                color: #777;
+            }
+        }
+        .controls{
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            span{
+                cursor: pointer;
+            }
+        }
+    }
+}
+.our-clients{
+    margin-top: 80px;
+    text-align: center;
+    p{
+        text-transform: capitalize;
+        font-size: 18px;
+        color: $mainColor;
+    }
+    .clients{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+.contact-us{
+    margin-top: 80px;
+    p{
+        color: #777;
+        font-size: 15px;
+        line-height: 31px;
+        margin: 20px 0;
+    }
+    ul{
+        margin-top: 33px;
+        li{
+            list-style: none;
+            color: #777;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    input{
+        width: 90%;
+        padding: 16px;
+        border: 2px solid #777;
+        border-radius: 5px;
+        margin-bottom: 21px;
+        outline: none;
+        transition: 0.3s;
+
+        &[name="Message"]{
+            padding-bottom: 200px;
+        }
+        &:focus{
+            transition: 0.3s;
+            border: 2px solid $mainColor;
+        }
+    }
+    button{
+        padding: 13px 36px;
+        border: 2px solid $mainColor;
+        border-radius: 5px;
+        width: 22%;
+        background-color: $mainColor;
+        transition: 0.3s;
+        color: #fff;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+            transition: 0.3s;
+        }
+    }
+}

@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Heebo:wght@100;200;300;400;500;600&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;300;400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Tajawal:wght@200;300;400;500;700;800&display=swap");
+.row-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 26px 42px;
+  flex-direction: row;
+}
+.nav-div .nav-items ul li {
+  font-weight: 500;
+  list-style: none;
+  padding-left: 15px;
+  display: inline-block;
+}
+.nav-div .nav-items ul li a {
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.81);
+  transition: 0.3s;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.nav-div .nav-items ul li:hover a {
+  transition: 0.3s;
+  color: #FCC028;
+  border-bottom: 2px solid #FCC028;
+}
+
+.hire button {
+  cursor: pointer;
+  background: #FCC028;
+  border: 2px solid #FCC028;
+  padding: 9px 26px;
+  transition: 0.3s;
+  border-radius: 5px;
+  color: #fff;
+}
+.hire button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.hire button:hover {
+  transition: 0.3s;
+  background-color: #fff;
+  border-bottom: 2px solid #FCC028;
+}
+.hire button:hover a {
+  color: #000;
+  transition: 0.3s;
+}
+
+.home, .about {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .home-content .hello, .about .home-content .hello {
+  font-size: 18px;
+  color: #FCC028;
+}
+.home .home-content .name, .about .home-content .name {
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.home .home-content .job, .about .home-content .job {
+  font-size: 22px;
+  color: rgb(32, 119, 51);
+}
+.home .home-content .desc, .about .home-content .desc {
+  font-size: 16px;
+  line-height: 33px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.home .hire button.cv, .about .hire button.cv {
+  background-color: transparent;
+  border: none;
+}
+.home .hire button.cv a, .about .hire button.cv a {
+  color: #000;
+  font-weight: 600;
+}
+.home .hire button.cv a i, .about .hire button.cv a i {
+  margin-left: 15px;
+  color: #FCC028;
+}
+
+.about {
+  margin-bottom: 100px;
+}
+.about .about-content {
+  width: 50%;
+}
+.about .about-content p.bit {
+  font-size: 18px;
+  color: #FCC028;
+  text-transform: uppercase;
+}
+.about .about-content h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.about .about-content p.desc {
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  margin: 25px 0;
+}
+.about .about-img {
+  width: 50%;
+}
+.about .qualifications {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .qualifications .quali-box {
+  display: flex;
+  align-items: center;
+}
+.about .qualifications .quali-box img {
+  margin-right: 15px;
+}
+.about .qualifications .quali-box .number {
+  font-size: 16px;
+  color: #FCC028;
+}
+.about .qualifications .quali-box .desc {
+  font-size: 17px;
+}
+.about .qualifications .quali-box .qua-content {
+  margin-right: 14px;
+}
+
+.services {
+  margin-bottom: 100px;
+}
+.services .main-heading {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.services .main-heading h4 {
+  text-transform: uppercase;
+  color: #FCC028;
+}
+.services .main-heading h1 {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.services .srv-box {
+  text-align: center;
+}
+.services .srv-box img {
+  width: 100%;
+}
+.services .srv-box h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.services .srv-box p {
+  color: #777;
+}
+
+.case-studies .case-box {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.case-studies .case-box .case-img {
+  width: 48%;
+}
+.case-studies .case-box .case-img img {
+  width: 100%;
+}
+.case-studies .case-box .case-content {
+  width: 48%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.case-studies .case-box .case-content .index {
+  font-size: 20px;
+  color: #FCC028;
+}
+.case-studies .case-box .case-content .title {
+  font-size: 32px;
+  font-weight: 600;
+}
+.case-studies .case-box .case-content .desc {
+  font-size: 17px;
+  line-height: 30px;
+  color: #777;
+}
+.case-studies .case-box .case-content button {
+  padding: 9px 26px;
+  border: 1px solid #FCC028;
+  border-radius: 5px;
+  width: 20%;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.case-studies .case-box .case-content button a {
+  color: #FCC028;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.case-studies .case-box .case-content button:hover {
+  background-color: #FCC028;
+  transition: 0.3s;
+}
+.case-studies .case-box .case-content button:hover a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.testimonials {
+  text-align: center;
+}
+.testimonials .testi-box {
+  position: relative;
+  margin-top: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.testimonials .testi-box img {
+  width: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: -66px;
+  transform: translate(-50%, 50%);
+}
+.testimonials .testi-box .testimonials-content {
+  padding: 50px;
+}
+.testimonials .testi-box .testimonials-content #desc {
+  font-size: 15px;
+  color: #777;
+}
+.testimonials .testi-box .testimonials-content #name {
+  font-weight: 700;
+  font-size: 25px;
+}
+.testimonials .testi-box .testimonials-content #job {
+  color: #777;
+}
+.testimonials .testi-box .controls {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.testimonials .testi-box .controls span {
+  cursor: pointer;
+}
+
+.our-clients {
+  margin-top: 80px;
+  text-align: center;
+}
+.our-clients p {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #FCC028;
+}
+.our-clients .clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact-us {
+  margin-top: 80px;
+}
+.contact-us p {
+  color: #777;
+  font-size: 15px;
+  line-height: 31px;
+  margin: 20px 0;
+}
+.contact-us ul {
+  margin-top: 33px;
+}
+.contact-us ul li {
+  list-style: none;
+  color: #777;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contact-us input {
+  width: 90%;
+  padding: 16px;
+  border: 2px solid #777;
+  border-radius: 5px;
+  margin-bottom: 21px;
+  outline: none;
+  transition: 0.3s;
+}
+.contact-us input[name=Message] {
+  padding-bottom: 200px;
+}
+.contact-us input:focus {
+  transition: 0.3s;
+  border: 2px solid #FCC028;
+}
+.contact-us button {
+  padding: 13px 36px;
+  border: 2px solid #FCC028;
+  border-radius: 5px;
+  width: 22%;
+  background-color: #FCC028;
+  transition: 0.3s;
+  color: #fff;
+}
+.contact-us button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s;
+}/*# sourceMappingURL=main.css.map */
